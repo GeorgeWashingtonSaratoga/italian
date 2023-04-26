@@ -1,0 +1,18 @@
+body {
+    background-image: url("flag.png");
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+p {
+    font-family: "Comic Sans MS";
+}
+
+button {
+    font-family: "Comic Sans MS";
+}
+
+input {
+    font-family: "Comic Sans MS";
+}
