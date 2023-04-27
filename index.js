@@ -55,7 +55,7 @@ function draw() {
         timeimeimeimeiemeimiemiemiemikemekemieike ++;
         toime ++;
         if (oneclicked == true && continu == true|| twoclicked == true && continu == true|| threeclicked == true && continu == true|| fourclicked == true && continu == true|| enterclicked == true && continu == true) {
-            randy = Math.floor(Math.random() * (9 - 1) + 1);
+            var randy = Math.floor(Math.random() * (12 - 1) + 1);
             if (randy == 1 && toime >= 40) {
                 current_city = `start`;
                 toime = 0;
@@ -92,6 +92,14 @@ function draw() {
                 current_city = `Naples`;
                 toime = 0;
                 continu = false;
+            }else if (randy == 10 && toime >= 40) {
+                current_city = `Turin`;
+                toime = 0;
+                continu = false;
+            }else if (randy == 11 && toime >= 40) {
+                current_city = `Palermo`;
+                toime = 0;
+                continu = false;
             }
         } else if (timeimeimeimeiemeimiemiemiemikemekemieike >= 500) {
             if (timeimeimeimeiemeimiemiemiemikemekemieike < 600 && timeimeimeimeiemeimiemiemiemikemekemieike > 500) {
@@ -112,7 +120,11 @@ function draw() {
                 current_city = `Milan`;
             }else if (timeimeimeimeiemeimiemiemiemikemekemieike < 1400 && timeimeimeimeiemeimiemiemiemikemekemieike > 1300) {
                 current_city = `Naples`;
-            }else if (timeimeimeimeiemeimiemiemiemikemekemieike > 1400) {
+            }else if (timeimeimeimeiemeimiemiemiemikemekemieike < 1500 && timeimeimeimeiemeimiemiemiemikemekemieike > 1400) {
+                current_city = `Turin`;
+            }else if (timeimeimeimeiemeimiemiemiemikemekemieike < 1600 && timeimeimeimeiemeimiemiemiemikemekemieike > 1500) {
+                current_city = `Palermo`;
+            }else if (timeimeimeimeiemeimiemiemiemikemekemieike > 1600) {
                 timeimeimeimeiemeimiemiemiemikemekemieike = 500;
             }
         }
@@ -122,6 +134,12 @@ function draw() {
         ctx.drawImage(menu, 0, 0, 740, 480, 0, 190, 512, 322)
         if (current_city == `start`) {
             ctx.drawImage(bg, 0, 0, 740, 260, 0, 0, 512, 190)
+            if (voidRan == 1){
+                ctx.drawImage(misery, 0, 2700, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Mob Boss", 20, 240)}
+            else if (voidRan == 2){
+                ctx.drawImage(misery, 160, 2700, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Bread Salesman", 20, 240)}
         } else if (current_city == `Florence`) {
             ctx.drawImage(bg, 0, 270, 740, 260, 0, 0, 512, 190)
             if (othRan == 1){
@@ -211,7 +229,29 @@ function draw() {
             else if (othRan == 3){
                 ctx.drawImage(misery, 320, 1890, 150, 260, 207, 0, 104, 190)
                 ctx.fillText("Gelato Vendor (Limone)", 20, 240)}
-        } 
+        } else if (current_city == `Turin`) {
+            ctx.drawImage(bg, 0, 2430, 740, 260, 0, 0, 512, 190)
+            if (othRan == 1){
+                ctx.drawImage(misery, 0, 2160, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Fiat Mechanic", 20, 240)}
+            else if (othRan == 2){
+                ctx.drawImage(misery, 160, 2160, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Juventus Fan", 20, 240)}
+            else if (othRan == 3){
+                ctx.drawImage(misery, 320, 2160, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Chocolate Maker", 20, 240)}
+        } else if (current_city == `Palermo`) {
+            ctx.drawImage(bg, 0, 2700, 740, 260, 0, 0, 512, 190)
+            if (othRan == 1){
+                ctx.drawImage(misery, 0, 2430, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Fishmongerer", 20, 240)}
+            else if (othRan == 2){
+                ctx.drawImage(misery, 160, 2430, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Arancini Vendor", 20, 240)}
+            else if (othRan == 3){
+                ctx.drawImage(misery, 320, 2430, 150, 260, 207, 0, 104, 190)
+                ctx.fillText("Mafioso", 20, 240)}
+        }
         
         if (AABB(mouseX, mouseY, 5, 5, 20, 342, 134, 60) && oneclicked == false ) {
             if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
