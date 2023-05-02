@@ -54,6 +54,11 @@ function ranDraw() {
 function draw() {
         timeimeimeimeiemeimiemiemiemikemekemieike ++;
         toime ++;
+        onesnap++;
+        twosnap++;
+        threenap++;
+        foursnap++;
+        entersnap++;
         if (oneclicked == true && continu == true|| twoclicked == true && continu == true|| threeclicked == true && continu == true|| fourclicked == true && continu == true|| enterclicked == true && continu == true) {
             var randy = Math.floor(Math.random() * (12 - 1) + 1);
             if (randy == 1 && toime >= 40) {
@@ -254,8 +259,8 @@ function draw() {
         }
         
         if (AABB(mouseX, mouseY, 5, 5, 20, 342, 134, 60) && oneclicked == false ) {
-            if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
-                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
+            if (mouseDown && oneSnap > 40) {
+                oneSnap = 0;
                 ctx.drawImage(butt, 0, 0, 200, 100, 25, 342, 124, 60)
                 continu = true;
                 oneclicked = true;
@@ -270,8 +275,8 @@ function draw() {
             ctx.drawImage(butt, 0, 0, 200, 100, 20, 342, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 20, 437, 134, 60) && threeclicked == false ) {
-            if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
-                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
+            if (mouseDown && threeSnap > 40) {
+                threeSnap = 0;
                 ctx.drawImage(butt, 0, 100, 200, 100, 25, 437, 124, 60)
                 continu = true;
                 threeclicked = true;
@@ -286,8 +291,8 @@ function draw() {
             ctx.drawImage(butt, 0, 100, 200, 100, 20, 437, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 187, 342, 134, 60) && twoclicked == false ) {
-            if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
-                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
+            if (mouseDown && twolicked > 40) {
+                twolicked = 0;
                 ctx.drawImage(butt, 0, 200, 200, 100, 192, 342, 124, 60)
                 continu = true;
                 twoclicked = true;
@@ -302,8 +307,8 @@ function draw() {
             ctx.drawImage(butt, 0, 200, 200, 100, 187, 342, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 187, 437, 134, 60)&& fourclicked == false) {
-            if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
-                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
+            if (mouseDown && fourSnap > 40) {
+                fourSnap = 0;
                 ctx.drawImage(butt, 0, 300, 200, 100, 192, 437, 124, 60)
                 continu = true;
                 fourclicked = true;
@@ -318,8 +323,8 @@ function draw() {
             ctx.drawImage(butt, 0, 300, 200, 100, 187, 437, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 355, 386, 134, 60) && enterclicked == false ) {
-            if (mouseDown && timeimeimeimeiemeimiemiemiemikemekemieike > 40) {
-                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
+            if (mouseDown && enterSnap > 40) {
+                enterSnap = 0;
                 ctx.drawImage(butt, 0, 400, 200, 100, 360, 386, 124, 60)
                 continu = true;
                 enterclicked = true;
@@ -334,23 +339,19 @@ function draw() {
             ctx.drawImage(butt, 0, 400, 200, 100, 355, 386, 134, 60)
         }
 
-        if (oneclicked == true && timeimeimeimeiemeimiemiemiemikemekemieike >= 169) {
+        if (oneclicked == true && oneSnap >= 169) {
             oneclicked = false;
-            continu = true;
         }
-        if (twoclicked == true && timeimeimeimeiemeimiemiemiemikemekemieike >= 169) {
-            twoclicked = false;
-            continu = true;
+        if (twoclicked == true && twoSnap >= 169) {
+            twolicked = false;
         }
-        if (threeclicked == true && timeimeimeimeiemeimiemiemiemikemekemieike >= 169) {
+        if (threeclicked == true && threeSnap >= 169) {
             threeclicked = false;
-            continu = true;
         }
-        if (fourclicked == true && timeimeimeimeiemeimiemiemiemikemekemieike >= 169) {
+        if (fourclicked == true && fourSnap >= 169) {
             fourclicked = false;
-            continu = true;
         }
-        if (enterclicked == true && timeimeimeimeiemeimiemiemiemikemekemieike >= 169) {
+        if (fourclicked == true && enterSnap >= 169) {
             enterclicked = false;
             continu = true;
         }
