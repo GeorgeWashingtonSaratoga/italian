@@ -18,6 +18,11 @@ var toime = 0;
 var voidRan = 0;
 var veniceRan = 0;
 var othRan = 0;
+var onesnap = 0;
+var twosnap = 0;
+var threesnap = 0;
+var foursnap = 0;
+var entersnap = 0;
 var continu = true;
 ctx.font = '20px Arial';
 function AABB(x1, y1, w1, h1, x2, y2, w2, h2) {
