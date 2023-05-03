@@ -328,8 +328,8 @@ function draw() {
             ctx.drawImage(butt, 0, 300, 200, 100, 187, 437, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 355, 386, 134, 60) && enterclicked == false ) {
-            if (mouseDown && enterSnap > 40) {
-                enterSnap = 0;
+            if (mouseDown && entersnap > 40) {
+                entersnap = 0;
                 ctx.drawImage(butt, 0, 400, 200, 100, 360, 386, 124, 60)
                 continu = true;
                 enterclicked = true;
