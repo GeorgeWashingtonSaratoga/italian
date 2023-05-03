@@ -264,8 +264,8 @@ function draw() {
         }
         
         if (AABB(mouseX, mouseY, 5, 5, 20, 342, 134, 60) && oneclicked == false ) {
-            if (mouseDown && oneSnap > 40) {
-                oneSnap = 0;
+            if (mouseDown && onesnap > 40) {
+                onesnap = 0;
                 ctx.drawImage(butt, 0, 0, 200, 100, 25, 342, 124, 60)
                 continu = true;
                 oneclicked = true;
@@ -280,8 +280,8 @@ function draw() {
             ctx.drawImage(butt, 0, 0, 200, 100, 20, 342, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 20, 437, 134, 60) && threeclicked == false ) {
-            if (mouseDown && threeSnap > 40) {
-                threeSnap = 0;
+            if (mouseDown && threesnap > 40) {
+                threesnap = 0;
                 ctx.drawImage(butt, 0, 100, 200, 100, 25, 437, 124, 60)
                 continu = true;
                 threeclicked = true;
@@ -296,8 +296,8 @@ function draw() {
             ctx.drawImage(butt, 0, 100, 200, 100, 20, 437, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 187, 342, 134, 60) && twoclicked == false ) {
-            if (mouseDown && twolicked > 40) {
-                twolicked = 0;
+            if (mouseDown && twosnap > 40) {
+                twosnap = 0;
                 ctx.drawImage(butt, 0, 200, 200, 100, 192, 342, 124, 60)
                 continu = true;
                 twoclicked = true;
@@ -344,19 +344,19 @@ function draw() {
             ctx.drawImage(butt, 0, 400, 200, 100, 355, 386, 134, 60)
         }
 
-        if (oneclicked == true && oneSnap >= 169) {
+        if (oneclicked == true && onesnap >= 169) {
             oneclicked = false;
         }
-        if (twoclicked == true && twoSnap >= 169) {
+        if (twoclicked == true && twosnap >= 169) {
             twolicked = false;
         }
-        if (threeclicked == true && threeSnap >= 169) {
+        if (threeclicked == true && threesnap >= 169) {
             threeclicked = false;
         }
-        if (fourclicked == true && fourSnap >= 169) {
+        if (fourclicked == true && foursnap >= 169) {
             fourclicked = false;
         }
-        if (fourclicked == true && enterSnap >= 169) {
+        if (fourclicked == true && entersnap >= 169) {
             enterclicked = false;
             continu = true;
         }
