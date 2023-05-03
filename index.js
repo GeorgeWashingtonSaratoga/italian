@@ -269,6 +269,7 @@ function draw() {
                 ctx.drawImage(butt, 0, 0, 200, 100, 25, 342, 124, 60)
                 continu = true;
                 oneclicked = true;
+                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
                 ranDraw();
             } else {
                 ctx.drawImage(butt, 0, 0, 200, 100, 15, 342, 144, 60)
@@ -285,6 +286,7 @@ function draw() {
                 ctx.drawImage(butt, 0, 100, 200, 100, 25, 437, 124, 60)
                 continu = true;
                 threeclicked = true;
+                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
                 ranDraw();
             } else {
                 ctx.drawImage(butt, 0, 100, 200, 100, 15, 437, 144, 60)
@@ -301,6 +303,7 @@ function draw() {
                 ctx.drawImage(butt, 0, 200, 200, 100, 192, 342, 124, 60)
                 continu = true;
                 twoclicked = true;
+                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
                 ranDraw();
             } else {
                 ctx.drawImage(butt, 0, 200, 200, 100, 182, 342, 144, 60)
@@ -317,6 +320,7 @@ function draw() {
                 ctx.drawImage(butt, 0, 300, 200, 100, 192, 437, 124, 60)
                 continu = true;
                 fourclicked = true;
+                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
                 ranDraw();
             } else {
                 ctx.drawImage(butt, 0, 300, 200, 100, 182, 437, 144, 60)
@@ -333,6 +337,7 @@ function draw() {
                 ctx.drawImage(butt, 0, 400, 200, 100, 360, 386, 124, 60)
                 continu = true;
                 enterclicked = true;
+                timeimeimeimeiemeimiemiemiemikemekemieike = 0;
                 ranDraw();
             } else {
                 ctx.drawImage(butt, 0, 400, 200, 100, 350, 386, 144, 60)
