@@ -312,8 +312,8 @@ function draw() {
             ctx.drawImage(butt, 0, 200, 200, 100, 187, 342, 134, 60)
         }
         if (AABB(mouseX, mouseY, 5, 5, 187, 437, 134, 60)&& fourclicked == false) {
-            if (mouseDown && fourSnap > 40) {
-                fourSnap = 0;
+            if (mouseDown && foursnap > 40) {
+                foursnap = 0;
                 ctx.drawImage(butt, 0, 300, 200, 100, 192, 437, 124, 60)
                 continu = true;
                 fourclicked = true;
