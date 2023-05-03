@@ -348,7 +348,7 @@ function draw() {
             oneclicked = false;
         }
         if (twoclicked == true && twosnap >= 169) {
-            twolicked = false;
+            twoclicked = false;
         }
         if (threeclicked == true && threesnap >= 169) {
             threeclicked = false;
@@ -356,7 +356,7 @@ function draw() {
         if (fourclicked == true && foursnap >= 169) {
             fourclicked = false;
         }
-        if (fourclicked == true && entersnap >= 169) {
+        if (enterclicked == true && entersnap >= 169) {
             enterclicked = false;
             continu = true;
         }
