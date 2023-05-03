@@ -61,7 +61,7 @@ function draw() {
         toime ++;
         onesnap++;
         twosnap++;
-        threenap++;
+        threesnap++;
         foursnap++;
         entersnap++;
         if (oneclicked == true && continu == true|| twoclicked == true && continu == true|| threeclicked == true && continu == true|| fourclicked == true && continu == true|| enterclicked == true && continu == true) {
